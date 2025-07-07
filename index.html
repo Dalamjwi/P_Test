@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피의 게임: 최후의 파트너</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+
+    <section id="intro-page" class="game-page active">
+        <div class="container">
+            <img src="https://via.placeholder.com/250x100?text=GAME+LOGO" alt="피의 게임 로고" class="game-logo">
+            <h1>피의 게임: 최후의 파트너</h1>
+            <p>환영합니다, [상대방 이름]님.</p>
+            <p>이 게임은 당신의 모든 것을 건 생존 게임입니다. 당신만이 풀어낼 수 있는 비밀이 존재합니다.</p>
+            <p>모든 미션을 성공적으로 완수해야만 '최후의 파트너'에게 허락된 진실과 마주할 수 있습니다.</p>
+            <button id="startButton" class="game-button">운명을 선택하다</button>
+        </div>
+    </section> 
+
+    <section id="mission1-page" class="game-page hidden">
+        <div class="container">
+            <h2>미션 룸 1: 기억의 방</h2>
+            <p>당신의 기억 속 퍼즐을 맞춰야 합니다. 우리가 처음 만난 순간의 조각을 찾아보세요.</p>
+            <div id="puzzle-area">
+                <p><strong>퀴즈:</strong> 우리가 처음 만난 장소는 어디일까요? (예: "카페이름" 또는 "거리이름")</p>
+                <input type="text" id="mission1Input" placeholder="정답을 입력하세요">
+                <button id="mission1Button" class="game-button">제출</button>
+            </div>
+        </div>
+    </section> 
+
+    <section id="mission2-page" class="game-page hidden">
+        <div class="container">
+            <h2>미션 룸 2: 선택의 문</h2>
+            <p>두 갈래 길 중 하나를 선택해야 합니다. 당신의 마음이 이끄는 곳은 어디인가요?</p>
+            <div class="choices">
+                <button id="choiceA" class="game-button">평생 나랑 같이 살래?</button>
+                <button id="choiceB" class="game-button">혼자만의 자유를 원해?</button>
+            </div>
+            <p id="choiceResult" style="margin-top: 20px;"></p>
+        </div>
+    </section> 
+
+    <section id="mission3-page" class="game-page hidden">
+        <div class="container">
+            <h2>미션 룸 3: 진실의 방</h2>
+            <p>가장 솔직한 마음으로 질문에 답해주세요. 진실만이 다음 문을 엽니다.</p>
+            <p><strong>질문:</strong> 나에게 당신은 어떤 의미인가요?</p>
+            <input type="text" id="mission3Input" placeholder="진심을 입력하세요 (5글자 이상)">
+            <button id="mission3Button" class="game-button">제출</button>
+        </div>
+    </section> 
+
+    <section id="propose-page" class="game-page hidden">
+        <div class="container final-stage">
+            <h1>🎉 축하합니다, [상대방 이름]님! 🎉</h1>
+            <h2>당신은 '피의 게임: 최후의 파트너'에서 **최종 우승자**가 되었습니다!</h2>
+            <p>당신은 나의 삶에서 가장 치열하게 사랑했고, 가장 소중한 존재이며, 유일한 **생존자**이자 **동반자**입니다.</p>
+            <div class="propose-message">
+                <p>사랑하는 [상대방 이름]에게,</p>
+                <p>우리가 함께 걸어온 수많은 길 위에서, 너는 언제나 나의 가장 든든한 버팀목이었고, 나의 가장 큰 행복이었어.</p>
+                <p>이 게임처럼 우리의 삶에도 때로는 예상치 못한 미션과 선택의 순간들이 찾아올 거야. 하지만 너와 함께라면 어떤 어려움도 헤쳐나갈 수 있다는 것을 나는 믿어.</p>
+                <p>나와 함께, 우리의 새로운 '게임'을 시작해줄래? 남은 평생 동안, 이 세상의 모든 아름다운 순간들을 함께 만들고 싶어.</p>
+                <p>나와 결혼해 줄래?</p>
+            </div>
+            <div class="propose-media">
+                <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls autoplay muted loop></video> 
+                <div class="photo-slideshow">
+                    <img src="https://via.placeholder.com/600x350?text=Memory+1" alt="추억 사진 1" class="active">
+                    <img src="https://via.placeholder.com/600x350?text=Memory+2" alt="추억 사진 2">
+                    <img src="https://via.placeholder.com/600x350?text=Memory+3" alt="추억 사진 3">
+                    </div>
+            </div>
+            <div class="call-to-action">
+                <button id="yesButton" class="game-button final-button">응, 결혼할게! ❤️</button>
+                <button id="noButton" class="game-button final-button">음... (장난)</button>
+            </div>
+        </div>
+    </section> 
+
+    <script src="js/script.js"></script>
+</body>
+</html>
